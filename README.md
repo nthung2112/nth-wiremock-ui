@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# nth-wiremock-ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a user interface for managing WireMock stubs. It provides a visual way to create, edit, and manage WireMock mappings, making it easier to work with WireMock for testing and development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create new WireMock mappings
+- Edit existing mappings
+- Delete mappings
+- View mappings in a user-friendly interface
+- Import and export mappings
 
-## Expanding the ESLint configuration
+### Viewing Mappings
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The UI provides a clear and organized view of all your WireMock mappings. You can browse through them, inspect their details (request matchers, response definitions), and quickly identify the mappings you need to modify or delete. The interface is designed to present complex mapping configurations in an easily digestible format.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- React
+- TypeScript
+- Vite
+- Redux Toolkit
+- Edikit
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>=18)
+- npm or bun
+
+### Installation
+
+```bash
+bun install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Running the Project
+
+```bash
+bun run dev
+```
+
+This will start the development server. Open your browser and navigate to http://localhost:5173 to view the application.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests or open issues.
+
+## License
+
+MIT

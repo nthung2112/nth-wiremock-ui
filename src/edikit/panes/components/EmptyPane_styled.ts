@@ -14,10 +14,3 @@ export const Block = styled.div`
   margin-bottom: 120px;
   opacity: 0.2;
 `;
-
-export const Brand = styled.span`
-  color: ${(props) => props.theme.colors.accent};
-  font-weight: 800;
-  font-size: 32px;
-  margin-left: 16px;
-`;
